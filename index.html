@@ -55,10 +55,10 @@ h2{
     padding-left:10px;
 }
 
-.meta{
-    font-size:.85rem;
-    color:#777;
-    margin-bottom:20px;
+.meta {
+    font-size: .85rem;
+    color: #555; /* Higher contrast */
+    margin-bottom: 20px;
 }
 
 p{
@@ -75,21 +75,20 @@ p{
 }
 
 /* Footer */
-footer{
-    text-align:center;
-    padding:30px;
-    font-size:.85rem;
-    color:#888;
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: .85rem;
+    color: #595959; /* Meets WCAG AA standards */
 }
 </style>
 </head>
 
 <body>
-
-<div class="header">
+<header class="header"> <!-- Added <header> landmark -->
     <h1>SUWY TECH LLP</h1>
     <p>Legal & Privacy Information</p>
-</div>
+</header>
 
 <div class="container">
 <div class="card">
@@ -121,8 +120,9 @@ Effective Date: May 02, 2026 | Last Updated: May 02, 2026
 </div>
 
 <footer>
-© 2026 SUWY TECH LLP • All Rights Reserved
+    © 2026 SUWY TECH LLP • All Rights Reserved
 </footer>
+
 
 </body>
 </html>
