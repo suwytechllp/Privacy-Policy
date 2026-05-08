@@ -8,9 +8,10 @@
 <meta name="description" content="Privacy Policy for SWCHITS by SUWY TECH LLP. Secure encryption and data protection standards.">
 <meta name="theme-color" content="#1a73e8">
 <style>
-/* 100/100 Core CSS - No Shadows, No Transitions, No Complex Selectors */
+/* 100/100 Core CSS - Validated Version */
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:system-ui,-apple-system,sans-serif;background:#fafafa;color:#333;line-height:1.4;font-display:swap}
+/* REMOVED: font-display:swap from body to fix validation error */
+body{font-family:system-ui,-apple-system,sans-serif;background:#fafafa;color:#333;line-height:1.4}
 .header{text-align:center;padding:30px 15px 5px}
 .header h1{font-size:1.6rem;color:#1a73e8}
 .header p{color:#575757;font-size:0.9rem}
@@ -21,7 +22,6 @@ h2{margin-top:20px;font-size:1.1rem;color:#111;border-left:4px solid #1a73e8;pad
 p{margin-top:8px}
 .contact{background:#f5f8ff;padding:15px;border-radius:6px;margin-top:20px;border:1px solid #d0d7de}
 footer{text-align:center;padding:25px;font-size:0.8rem;color:#575757}
-/* Unified layout to prevent re-calculation on rotation */
 @media (max-width:600px){.header h1{font-size:1.4rem}.card{padding:15px}}
 </style>
 </head>
