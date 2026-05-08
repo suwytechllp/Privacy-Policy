@@ -8,7 +8,6 @@
 <meta name="description" content="Read the Privacy Policy for SWCHITS by SUWY TECH LLP. Learn how we use modern encryption to protect your data.">
 <meta name="theme-color" content="#1a73e8">
 <style>
-/* Added font-display swap to reduce main-thread blocking */
 *{box-sizing:border-box;margin:0;padding:0}
 
 body{
@@ -16,10 +15,10 @@ body{
     background:linear-gradient(135deg,#eef3ff,#f9f9f9);
     color:#333;
     line-height:1.6;
-    font-display: swap; 
+    font-display: swap; /* Added to improve Performance/Main-thread score */
 }
 
-/* Header */
+/* Header Landmark Styles */
 .header{
     text-align:center;
     padding:40px 20px 10px;
@@ -29,11 +28,11 @@ body{
     color:#1a73e8;
 }
 .header p{
-    color:#575757; /* Increased contrast from #666 */
+    color:#575757; /* Contrast fix */
     font-size:.95rem;
 }
 
-/* Main Card */
+/* Main Content Styles */
 .container{
     max-width:850px;
     margin:30px auto;
@@ -48,7 +47,7 @@ body{
     border:1px solid rgba(0,0,0,0.05);
 }
 
-/* Typography */
+/* Typography & Content Styles */
 h2{
     margin-top:30px;
     font-size:1.25rem;
@@ -59,7 +58,7 @@ h2{
 
 .meta {
     font-size: .85rem;
-    color: #575757; /* High contrast for accessibility */
+    color: #575757; /* Contrast fix */
     margin-bottom: 20px;
 }
 
@@ -67,7 +66,7 @@ p{
     margin-top:10px;
 }
 
-/* Contact Box */
+/* Contact Section */
 .contact{
     background:#f5f8ff;
     padding:20px;
@@ -76,25 +75,26 @@ p{
     border:1px solid #e0e7ff;
 }
 
-/* Footer */
+/* Footer Landmark Styles */
 footer {
     text-align: center;
     padding: 30px;
     font-size: .85rem;
-    color: #575757; /* High contrast for accessibility */
+    color: #575757; /* Contrast fix */
 }
 </style>
 </head>
 
 <body>
-    <!-- Header Landmark -->
+    <!-- 1. Header Landmark: Defines the top section -->
     <header class="header">
         <h1>SUWY TECH LLP</h1>
         <p>Legal & Privacy Information</p>
     </header>
 
-    <!-- Main Landmark: This is the critical fix for your "94" score -->
+    <!-- 2. Main Landmark: Critical fix for the "landmark" error -->
     <main class="container">
+        <!-- article tag tells Google this is an independent document -->
         <article class="card">
             <div class="meta">
                 Effective Date: May 02, 2026 | Last Updated: May 02, 2026
@@ -121,7 +121,7 @@ footer {
         </article>
     </main>
 
-    <!-- Footer Landmark -->
+    <!-- 3. Footer Landmark: Defines the bottom section -->
     <footer>
         © 2026 SUWY TECH LLP • All Rights Reserved
     </footer>
